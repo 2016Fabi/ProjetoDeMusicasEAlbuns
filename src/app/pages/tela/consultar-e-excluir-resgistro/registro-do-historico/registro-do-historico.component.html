@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center" *ngFor="let ItemHistorico of historico" >
+    <div class="row"> 
+        <div class="col-12 col-md-6">
+           {{ ItemHistorico }} 
+        </div>
+        <div class="col-12 col-md-6"> 
+           <button (click)="clicouNoExcluir(ItemHistorico)">Excluir</button>   
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <button (click)="clicarPraVoltar()">Voltar</button>
+</div>
